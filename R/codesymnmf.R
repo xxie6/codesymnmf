@@ -13,7 +13,7 @@
 #' @return A list containing the estimate for H and the objective function value
 #' @export
 #'
-codesymNMF <- function(A, r, init_type = 'zeros', maxiter = 100, rand_permutation = FALSE){
+codesymnmf <- function(A, r, init_type = 'zeros', maxiter = 100, rand_permutation = FALSE){
   H_init <- codesymnmf_init(A, r, init_type)
   codesymnmf_results <- codesymnmf_fit(A, H_init, maxiter, rand_permutation)
   return(codesymnmf_results)
